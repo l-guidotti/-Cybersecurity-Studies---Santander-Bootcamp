@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files (Python)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches de ambiente e bibliotecas
+.venv/
+venv/
+ENV/
+env/
+bin/
+lib/
+include/
+
+# Configurações de IDEs (VS Code, PyCharm, etc)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de sistema (Windows/Mac)
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+.cache/
+
+# Arquivos de Máquina Virtual (Caso você baixe ISOs ou logs do VirtualBox)
+*.iso
+*.ova
+*.vdi
+*.vbox-prev
