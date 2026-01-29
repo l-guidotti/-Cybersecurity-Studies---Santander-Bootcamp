@@ -44,4 +44,27 @@ Após a coleta, o analista deve organizar as informações para identificar:
 3.  **Falhas de Configuração:** Há serviços antigos ou desnecessários ativos?
 
 ---
+
+## 🚀 Técnicas Avançadas de Reconhecimento
+
+Além das ferramentas tradicionais, o uso estratégico de motores de busca e scanners globais permite encontrar vulnerabilidades críticas de forma passiva.
+
+### 1. Google Hacking (Google Dorks)
+Consiste no uso de operadores de busca avançados para filtrar resultados específicos que o Google já indexou, mas que não deveriam estar públicos.
+* **Operadores Comuns:**
+    * `site:alvo.com` (limita a busca a um domínio).
+    * `filetype:pdf` ou `filetype:sql` (busca por tipos específicos de arquivos).
+    * `intitle:"index of"` (encontra diretórios expostos no servidor).
+    * `inurl:admin` (busca por páginas de login administrativo).
+* **Exemplo:** `site:gov.br filetype:xlsx "confidencial"` pode revelar planilhas com dados sensíveis expostas acidentalmente.
+
+### 2. Shodan: O buscador de dispositivos
+Diferente do Google, que indexa páginas web, o **Shodan** indexa dispositivos conectados à internet (IoT, servidores, roteadores, câmeras, sistemas industriais).
+* **Aplicações:** Localizar servidores com versões antigas de software, bancos de dados abertos sem senha ou dispositivos com configurações padrão de fábrica.
+
+### 3. FOCA (Fingerprinting Organizations with Collected Archives)
+Ferramenta focada na extração de **metadados** em documentos públicos (PDF, DOCX, XLSX).
+* **O que ela revela:** Nomes de usuários que criaram os arquivos, versões de softwares utilizados, caminhos de rede interna (folders) e impressoras, facilitando ataques de engenharia social e exploração de infraestrutura.
+
+---
 *Anotações baseadas nas aulas de Coleta e Análise - DIO / Santander Bootcamp.*
